@@ -3545,7 +3545,7 @@ GameObject:
   - component: {fileID: 6375381950434763929}
   - component: {fileID: 5985573525091759819}
   - component: {fileID: 7727526473472453808}
-  - component: {fileID: 8120505692029551060}
+  - component: {fileID: 2049911864494627755}
   m_Layer: 0
   m_Name: sword
   m_TagString: Weapon
@@ -3669,7 +3669,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.41, y: 7.725043}
   m_EdgeRadius: 0
---- !u!114 &8120505692029551060
+--- !u!114 &2049911864494627755
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3678,14 +3678,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 8387134226907741895}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 61134ae967f1a4145a85f9ad2da91d79, type: 3}
+  m_Script: {fileID: 11500000, guid: f890a6e9d59a6d045817ef8de80828c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isPlayer: 1
-  attackDamage: 20
-  boss: {fileID: 0}
-  player: {fileID: 3654214691086029053}
-  attackOffset: {x: 0, y: 0, z: 0}
+  attackDamage: 10
 --- !u!1 &8573591960220565963
 GameObject:
   m_ObjectHideFlags: 0
