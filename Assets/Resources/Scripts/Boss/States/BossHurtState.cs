@@ -2,15 +2,12 @@ using UnityEngine;
 public class BossHurtState : State
 {
     private BossStateMachine bossContext;
-    private BossStateFactory bossFactory;
-    public BossHurtState(BossStateMachine currentContext, BossStateFactory pFactory) : base(currentContext, pFactory)
+    public BossHurtState(BossStateMachine currentContext) : base(currentContext)
     {
         bossContext = currentContext;
-        bossFactory = pFactory;
     }
     public override void EnterState()
     {
-        Debug.Log("hurt");
         bossContext.HurtFinished = 0;
         bossContext.Anim.SetBool("isHurt", true);
         bossContext.AppliedMovementX = 0f;
@@ -22,7 +19,6 @@ public class BossHurtState : State
     }
     public override void ExitState()
     {
-        bossContext.HurtFinished = 0;
         bossContext.IsHurt = false;
         bossContext.Anim.SetBool("isHurt", false);
     }
@@ -31,8 +27,7 @@ public class BossHurtState : State
     {
         if (bossContext.HurtFinished == 1)
         {
-            
-            SwitchState(bossFactory.Idle());
+            SwitchState(new BossIdleState(bossContext));
         }
         
     }
