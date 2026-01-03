@@ -37,9 +37,14 @@ public class PlayerWalkState : State
         else if (playerContext.IsShootPressed)
         {
             SwitchState(new PlayerShootState(playerContext));
-        } else if (playerContext.Grounded && playerContext.IsJumpPressed)
+        } 
+        else if (playerContext.Grounded && playerContext.IsJumpPressed)
         {
             SwitchState(new PlayerJumpState(playerContext));
+        } 
+        else if (playerContext.IsDashPressed)
+        {
+            SwitchState(new PlayerDashState(playerContext));
         } 
         else if (!playerContext.IsMovementPressed )
         {
