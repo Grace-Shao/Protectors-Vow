@@ -25,6 +25,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
     private bool shootFinished = false;
     private bool dashStarted = false;
     private bool dashFinished = false;
+    private bool isDashing = false;
     private bool hurtFinished = false;
     [SerializeField] private bool grounded = true;
 
@@ -59,6 +60,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
     public bool ShootFinished {get {return shootFinished; } set {shootFinished = value;}}
     public bool DashStarted {get {return dashStarted; } set {dashStarted = value;}}
     public bool DashFinished {get {return dashFinished; } set {dashFinished = value;}}
+    public bool IsDashing {get {return isDashing; } set {isDashing = value;}}
     public int CurrentDashMeter {get {return currentDashMeter;} set {currentDashMeter = value;}}
     public bool CanDash {get {return currentDashMeter >= dashMeter;}}
 
@@ -182,7 +184,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
 
     public void ApplyDamage(int damage)
     {
-        if (Time.time > canTakeDamage && DashFinished)
+        if (Time.time > canTakeDamage && !isDashing)
         {
             canTakeDamage = Time.time + Cooldown;
             Health -= damage;

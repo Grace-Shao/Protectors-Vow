@@ -23,7 +23,6 @@ public class BossStateMachine : StateMachine, IDamageable
     private int introFinished = 0;
     private int health;
     
-    private float canTakeDamage;
 
     public bool IsHurt{get {return isHurt;} set {isHurt = value;}}
     public bool IsTransitioning {get {return isTransitioning;} set {isTransitioning = value;}}
@@ -46,7 +45,6 @@ public class BossStateMachine : StateMachine, IDamageable
         base.Init();
         sprite = transform.Find("Sprite");
         Health = 100;
-        canTakeDamage = 0f; 
     }
 
     protected override void EnterBeginningState()
@@ -79,13 +77,12 @@ public class BossStateMachine : StateMachine, IDamageable
 
     public void ApplyDamage(int damage)
     {
-        if (Time.time > canTakeDamage && IntroFinished == 1)
+        if (IntroFinished == 1)
         {
-            canTakeDamage = Time.time + Cooldown;
             Health -= damage;
             Debug.Log("Enemy Health: " + Health);
-            IsHurt = true;
-            if (player.gameObject.GetComponent<PlayerStateMachine>().DashFinished)
+            sprite.GetComponent<DamageFlash>().BeginFlash();
+            if (!player.gameObject.GetComponent<PlayerStateMachine>().IsDashing)
             {
                 player.gameObject.GetComponent<PlayerStateMachine>().CurrentDashMeter += 1;
             }
@@ -126,4 +123,5 @@ public class BossStateMachine : StateMachine, IDamageable
     {
         return Vector2.Distance(transform.position, Player.transform.position) > GrappleTargetDistance;
     }
+
 }

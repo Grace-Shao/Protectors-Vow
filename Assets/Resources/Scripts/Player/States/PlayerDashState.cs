@@ -19,6 +19,7 @@ public class PlayerDashState : State
     public override void EnterState()
     {
         playerContext.DashFinished = false;
+        playerContext.IsDashing = true;
         playerContext.CanMove = false;
         playerContext.CurrentDashMeter = 0;
         // playerContext.AppliedMovementX = 0f;
@@ -31,6 +32,7 @@ public class PlayerDashState : State
     public override void ExitState()
     {
         playerContext.CanMove = true;
+        playerContext.IsDashing = false;
     }
 
     public override void CheckSwitchStates()
