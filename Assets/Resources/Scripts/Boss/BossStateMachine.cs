@@ -14,6 +14,7 @@ public class BossStateMachine : StateMachine, IDamageable
     [SerializeField] private float grappleSpeed;
 
     private int currentStage = 1;
+    private bool fightStarted = false;
     private bool isFlipped = false;
     private bool isHurt = false; 
     private bool isTransitioning = false;
@@ -25,6 +26,7 @@ public class BossStateMachine : StateMachine, IDamageable
     
 
     public bool IsHurt{get {return isHurt;} set {isHurt = value;}}
+    public bool FightStarted{get {return fightStarted;}}
     public bool IsTransitioning {get {return isTransitioning;} set {isTransitioning = value;}}
     public int GrapplingFinished {get {return grapplingFinished;} set {grapplingFinished = value;}}
     public int AttackFinished {get {return attackFinished; } set {attackFinished = value;}}
@@ -49,10 +51,20 @@ public class BossStateMachine : StateMachine, IDamageable
 
     protected override void EnterBeginningState()
     {
-        IsTransitioning = true;
-        currentState = new BossTransitionState(this);
+        IsTransitioning = false;
+        currentState = new BossStartState(this);
         currentState.EnterStates();
     }
+
+    protected override void UpdateState()
+    {
+        if (!IsTransitioning)
+        {
+            rb.linearVelocity = appliedMovement;
+        }
+        currentState.UpdateStates();
+    }
+
     protected override void FaceMovement()
     {
         Vector3 flipped = sprite.localScale;
@@ -77,7 +89,7 @@ public class BossStateMachine : StateMachine, IDamageable
 
     public void ApplyDamage(int damage)
     {
-        if (IntroFinished == 1)
+        if (IntroFinished == 1 && fightStarted)
         {
             Health -= damage;
             Debug.Log("Enemy Health: " + Health);
@@ -110,6 +122,7 @@ public class BossStateMachine : StateMachine, IDamageable
             Health = 100;
             Damage *= 2;
             MoveSpeed *= 1.5f;
+            player.gameObject.GetComponent<PlayerStateMachine>().UnlockAbility(currentStage);
         }
     }
 
@@ -122,6 +135,12 @@ public class BossStateMachine : StateMachine, IDamageable
     public bool GrappleInRange()
     {
         return Vector2.Distance(transform.position, Player.transform.position) > GrappleTargetDistance;
+    }
+
+    public void BeginBattle()
+    {
+        IsTransitioning = true;
+        fightStarted = true;
     }
 
 }

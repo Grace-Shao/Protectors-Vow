@@ -32,6 +32,8 @@ public class BossTransitionState : State
     {
         bossContext.IntroFinished = 1;
         bossContext.IsTransitioning = false;
+        bossContext.AppliedMovementX = 0f;
+        bossContext.AppliedMovementY = 0f;
     }
 
     public override void CheckSwitchStates()

@@ -14,6 +14,8 @@ public class PlayerStateMachine : StateMachine, IDamageable
     private Vector2 currentMovementInput;
     private bool isMovementPressed;
     private bool canMove = true;
+    private bool shootUnlocked = false;
+    private bool dashUnlocked = false;
     private bool isRunPressed;
     private bool isJumpPressed;
     private bool isHitPressed;
@@ -62,8 +64,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
     public bool DashFinished {get {return dashFinished; } set {dashFinished = value;}}
     public bool IsDashing {get {return isDashing; } set {isDashing = value;}}
     public int CurrentDashMeter {get {return currentDashMeter;} set {currentDashMeter = value;}}
-    public bool CanDash {get {return currentDashMeter >= dashMeter;}}
-
+    public bool CanDash {get {return dashUnlocked && currentDashMeter >= dashMeter;}}
     public bool HurtFinished {get {return hurtFinished; } set {hurtFinished = value;}}
     public bool Grounded {get {return grounded;} set {grounded = value;}}
     public Vector2 CurrentMovementInput {get {return currentMovementInput;}}
@@ -164,7 +165,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
     }
     void OnShoot(InputAction.CallbackContext context)
     {
-        isShootPressed = context.ReadValueAsButton();
+        isShootPressed = shootUnlocked && context.ReadValueAsButton();
     }
     void OnDash(InputAction.CallbackContext context)
     {
@@ -250,6 +251,17 @@ public class PlayerStateMachine : StateMachine, IDamageable
         if (other.gameObject.CompareTag("Ground"))
         {
             grounded = false;
+        }
+    }
+
+    public void UnlockAbility(int stage)
+    {
+        if (stage == 2)
+        {
+            shootUnlocked = true;
+        } else if (stage == 3)
+        {
+            dashUnlocked = true;
         }
     }
 

@@ -8,6 +8,7 @@ TagManager:
   - Weapon
   - Boss
   - Ground
+  - Note
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - Enemies
   - Weapons
   - Ground
-  - 
+  - Interactable
   - 
   - 
   - 

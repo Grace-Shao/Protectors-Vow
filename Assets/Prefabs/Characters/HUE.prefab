@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7812202646336118387}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_16
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40,7 +40,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8645151902339969309}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_12
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +76,7 @@ GameObject:
   - component: {fileID: 107569754708705602}
   - component: {fileID: 5810638262442088985}
   - component: {fileID: 7738115063544347002}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Face Idle Normal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1814181525985862723}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: RightLegEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -213,7 +213,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4336822915396320510}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -249,7 +249,7 @@ GameObject:
   - component: {fileID: 5154382235821538150}
   - component: {fileID: 8249437820214521824}
   - component: {fileID: 5811817481781910583}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Hair Bang L
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 2565435610920189423}
   - component: {fileID: 590943426070501827}
   - component: {fileID: 3838007787323515541}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Main Body
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 564357096342901656}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_5
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -497,7 +497,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2924155551150731850}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_18
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -529,7 +529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 222394301617961081}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: RightLegSolver_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2572753490028034308}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -595,7 +595,7 @@ GameObject:
   - component: {fileID: 3515450238572979528}
   - component: {fileID: 5882576001775305080}
   - component: {fileID: 4754789042300805928}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Sprite
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -693,7 +693,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2086011294138137219}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -727,7 +727,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5355749062546322762}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_6
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -760,7 +760,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3223875275575644681}
   - component: {fileID: 6055566437641349690}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Broadsword
   m_TagString: Weapon
   m_Icon: {fileID: 0}
@@ -849,7 +849,7 @@ GameObject:
   - component: {fileID: 5766710244171689322}
   - component: {fileID: 1435044187621169570}
   - component: {fileID: 6660567344003503346}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Hair Root
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -958,7 +958,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5001291140966504521}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: RightArmSolver_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -991,7 +991,7 @@ GameObject:
   - component: {fileID: 4485743300565755887}
   - component: {fileID: 1811662759470564277}
   - component: {fileID: 2883389194301644542}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Hair Bang R
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1101,7 +1101,7 @@ GameObject:
   - component: {fileID: 8569807715213561528}
   - component: {fileID: 4741885053088088388}
   - component: {fileID: 5779207792274637587}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Leg L Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1207,7 +1207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2049678916465984061}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LeftArmEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1240,7 +1240,7 @@ GameObject:
   - component: {fileID: 1499175635027920901}
   - component: {fileID: 7580061360116445492}
   - component: {fileID: 1161960330715304977}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Arm L Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1348,7 +1348,7 @@ GameObject:
   - component: {fileID: 3058591094446163963}
   - component: {fileID: 2907920513802428792}
   - component: {fileID: 4117798483107604421}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Head
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1455,7 +1455,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5020695022363516339}
   - component: {fileID: 7384809468287760024}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: RightArmSolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1521,7 +1521,7 @@ GameObject:
   - component: {fileID: 8327578928718795777}
   - component: {fileID: 1991689081988879865}
   - component: {fileID: 848178251426845125}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Ponytail
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1630,7 +1630,7 @@ GameObject:
   - component: {fileID: 1346951015217974613}
   - component: {fileID: 2874009225725415980}
   - component: {fileID: 6917383623757776241}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Leg R Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1737,7 +1737,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3729545786109124822}
   - component: {fileID: 4626894673147713124}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: Chain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1875,7 +1875,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7539389611378310248}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_15
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1907,7 +1907,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8640258659463567852}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LeftLegEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1940,7 +1940,7 @@ GameObject:
   - component: {fileID: 550299953189041133}
   - component: {fileID: 1715877811598434986}
   - component: {fileID: 4882671903148127051}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Leg L Calf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2048,7 +2048,7 @@ GameObject:
   - component: {fileID: 8428589901048380162}
   - component: {fileID: 1863948830536173819}
   - component: {fileID: 1301004815757149090}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Gadget
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2155,7 +2155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3654199623493730834}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_19
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2186,7 +2186,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2359212080795350192}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LeftArmSolver_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2217,7 +2217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1793110729243248744}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: RIghtArmEffector
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2252,7 +2252,7 @@ GameObject:
   - component: {fileID: 1192884550110139191}
   - component: {fileID: 2218031369120437713}
   - component: {fileID: 721011383080934295}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: HUE
   m_TagString: Boss
   m_Icon: {fileID: 0}
@@ -2400,7 +2400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6820662821260725923}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2434,7 +2434,7 @@ GameObject:
   - component: {fileID: 7432304698674133077}
   - component: {fileID: 2152540212275280467}
   - component: {fileID: 3235740584628678166}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Hair Bang Mid
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2541,7 +2541,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5536774248645397869}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_13
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2575,7 +2575,7 @@ GameObject:
   - component: {fileID: 2614810027072369119}
   - component: {fileID: 619209598629689590}
   - component: {fileID: 5906608851163659296}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: 'Arm R Upperarm '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2682,7 +2682,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7277186533661948616}
   - component: {fileID: 3442220445700313880}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LeftLegSolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2746,7 +2746,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4328249674764839637}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_11
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2779,7 +2779,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8427970155940726616}
   - component: {fileID: 3182468324011535451}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: RightLegSolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2843,7 +2843,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 273335359285791318}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_14
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2876,7 +2876,7 @@ GameObject:
   - component: {fileID: 824007660922581133}
   - component: {fileID: 4349144346327174785}
   - component: {fileID: 2821864482858304065}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Leg R Thigh
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2982,7 +2982,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3874258796540811367}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LeftLegSolver_Target
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3013,7 +3013,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 407772814523896008}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_7
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3047,7 +3047,7 @@ GameObject:
   - component: {fileID: 3089359900681335206}
   - component: {fileID: 5716801415627866939}
   - component: {fileID: 468140855845752134}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Face Idle Evil
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3155,7 +3155,7 @@ GameObject:
   - component: {fileID: 3756416104830994223}
   - component: {fileID: 7342428702268591448}
   - component: {fileID: 189423597319114066}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: 'Arm L Upperarm '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3261,7 +3261,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3950512619738335109}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_17
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3294,7 +3294,7 @@ GameObject:
   - component: {fileID: 7295983425099719763}
   - component: {fileID: 8963021404698913338}
   - component: {fileID: 299546272376829430}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Arm R Forearm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3400,7 +3400,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3528343912469602948}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_10
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3432,7 +3432,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4989838739724398532}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_8
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3465,7 +3465,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5091137213202237361}
   - component: {fileID: 2797994629596898368}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: LeftArmSolver
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3529,7 +3529,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6522552930734512775}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: bone_9
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3563,7 +3563,7 @@ GameObject:
   - component: {fileID: 5128414939474253538}
   - component: {fileID: 1423512173581577828}
   - component: {fileID: 5155376191016209186}
-  m_Layer: 8
+  m_Layer: 7
   m_Name: sword collider
   m_TagString: Weapon
   m_Icon: {fileID: 0}
