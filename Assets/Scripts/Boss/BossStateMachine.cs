@@ -162,6 +162,11 @@ public class BossStateMachine : StateMachine, IDamageable
     {
         attackFinished = 1;
     }
+
+    public void Stun()
+    {
+        JumpToState(new BossStunState(this));
+    }
     
 
 }
