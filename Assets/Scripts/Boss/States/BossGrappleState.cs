@@ -14,7 +14,7 @@ public class BossGrappleState : State
 
     public override void EnterState()
     {
-        bossContext.Anim.Play("Grapple");
+        bossContext.Anim.SetTrigger("grapple");
 
         lineRenderer = bossContext.GetComponentInChildren<LineRenderer>();
         if (lineRenderer == null)
@@ -36,13 +36,14 @@ public class BossGrappleState : State
 
     public override void ExitState()
     {
+        bossContext.Anim.ResetTrigger("grapple");
     }
 
     public override void CheckSwitchStates()
     {
         if (bossContext.GrapplingFinished == 1)
         {
-            SwitchState(new BossAttackState(bossContext));
+            SwitchState(new BossIdleState(bossContext));
         }
     }
 

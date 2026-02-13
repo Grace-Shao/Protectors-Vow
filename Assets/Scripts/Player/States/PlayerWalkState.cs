@@ -22,6 +22,7 @@ public class PlayerWalkState : State
     }
     public override void ExitState()
     {
+        playerContext.Anim.ResetTrigger("walk");
     }
 
     public override void CheckSwitchStates()

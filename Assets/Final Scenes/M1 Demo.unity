@@ -1820,6 +1820,10 @@ PrefabInstance:
       propertyPath: m_SortingLayerID
       value: -1105041087
       objectReference: {fileID: 0}
+    - target: {fileID: 2116196398618925377, guid: 193c249e372e47042bbd482a433b6183, type: 3}
+      propertyPath: attackDamage
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 2232978214380274909, guid: 193c249e372e47042bbd482a433b6183, type: 3}
       propertyPath: m_Layer
       value: 6
@@ -3371,6 +3375,10 @@ PrefabInstance:
       propertyPath: manager
       value: 
       objectReference: {fileID: 1498093552}
+    - target: {fileID: 686286107829047635, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
+      propertyPath: timeInIdle
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 707108528351154825, guid: d19d52292a0f31b4f98cca3a78e5fc74, type: 3}
       propertyPath: m_SortingLayer
       value: 5

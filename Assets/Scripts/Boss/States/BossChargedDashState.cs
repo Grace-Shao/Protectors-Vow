@@ -25,14 +25,9 @@ public class BossChargedDashState : State
 
     public override void CheckSwitchStates()
     {
-        if (bossContext.IsStunned)
+        if (bossContext.AttackFinished == 1)
         {
-            Debug.Log("switching states");
-            SwitchState(new BossStunState(bossContext));
-        }
-        else if (bossContext.AttackFinished == 1)
-        {
-            SwitchState(new BossWalkState(bossContext));
+            SwitchState(new BossIdleState(bossContext));
         }
     }
 }

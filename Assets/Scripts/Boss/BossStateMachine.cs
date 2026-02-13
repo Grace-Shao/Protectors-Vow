@@ -7,6 +7,7 @@ public class BossStateMachine : StateMachine, IDamageable
 
     [Header("Attack Controls")]
     [SerializeField] private float targetDistance;
+    [SerializeField] private float timeInIdle;
     [SerializeField] private float stunTime;
     [SerializeField] private float stunInterval;
     [SerializeField] private int damage;
@@ -47,6 +48,7 @@ public class BossStateMachine : StateMachine, IDamageable
     public int Damage {get {return damage;} set {damage = value;}}
     public float LastDashTime { get { return lastDashTime; } set { lastDashTime = value; } }
     public float Cooldown {get {return damageCooldown;} set {damageCooldown = value;}}
+    public float TimeInIdle {get {return timeInIdle;}}
     public float StunTime {get {return stunTime;}}
     public float StunInterval {get {return stunInterval;}}
     public float TargetDistance {get {return targetDistance;}}
@@ -116,10 +118,6 @@ public class BossStateMachine : StateMachine, IDamageable
 
             damageTakenParticles.Play();
 
-        }
-        if (Health % StunInterval == 0 && !isStunned)
-        {
-            isStunned = true;
         }
         if (Health <= 0f)
         {
