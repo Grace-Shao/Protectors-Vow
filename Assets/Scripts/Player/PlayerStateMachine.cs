@@ -261,7 +261,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
             canTakeDamage = Time.time + Cooldown;
             Health -= damage; 
             IsHurt = true;
-            
+            currentState.SwitchState(new PlayerHurtState(this));
             damageTakenParticles.Play();
         }
         UpdateHealthText();
@@ -271,6 +271,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
         }
     }
 
+    #region animation events
     void OnAttackAnimationStart()
     {
         AttackFinished = false;
@@ -319,6 +320,7 @@ public class PlayerStateMachine : StateMachine, IDamageable
     {
         HurtFinished = true;
     }
+    #endregion
 
     public void OnCollisionEnter2D(Collision2D other)
     {
